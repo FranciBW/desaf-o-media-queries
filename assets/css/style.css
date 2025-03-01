@@ -1,0 +1,165 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'menu'
+        'principal'
+        'pie';
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    grid-area: menu;
+    background-color: white;
+}
+
+nav img {
+    height: 200px;
+}
+
+.marca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around
+}
+
+.filtro {
+    display: none;
+}
+
+main {
+    grid-area: principal;
+    background-color: lightcyan;
+    text-align: center;
+}
+
+.el-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    width: 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.tarjeta img {
+    width: 100%;
+    aspect-ratio: 1 / 1 ;
+    border-radius: 10px;
+}
+
+.tarjeta div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: lightgoldenrodyellow;
+    background-color: lightgreen;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+    color: white;
+}
+
+footer {
+    grid-area: pie;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-img {
+    display: none;
+}
+
+@media (min-width:576px) {
+    body {
+        grid-template-columns: 1fr 7fr;
+        grid-template-areas:
+            'menu principal'
+            'menu principal'
+            'pie principal';
+    }
+
+    .marca {
+        flex-direction: column;
+    }
+
+    .barra {
+        display: none;
+    }
+
+    .marca img {
+        padding: 20px;
+        width: 150px;
+    }
+
+    .filtro {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .filtro ul {
+        list-style: none;
+    }
+
+    .filtro li {
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: solid;
+    }
+
+    .tarjetas {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .tarjeta {
+        width: 240px;
+    }
+
+    footer {
+        background-color: white;
+    }
+
+    .footer-img{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        align-items: center;
+    }
+
+}
