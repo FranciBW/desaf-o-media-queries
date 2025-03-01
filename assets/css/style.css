@@ -1,6 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         'menu'
         'principal'
@@ -18,6 +19,11 @@ nav {
 
 nav img {
     height: 200px;
+}
+
+.barra i {
+    font-size: 50px;
+    cursor: pointer;
 }
 
 .marca {
@@ -43,6 +49,11 @@ main {
     text-align: center;
 }
 
+.el-menu select {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+}
 .tarjetas {
     display: flex;
     flex-direction: column;
@@ -52,14 +63,13 @@ main {
 .tarjeta {
     display: flex;
     flex-direction: column;
-    width: 1fr;
     border: 1px solid black;
     border-radius: 10px;
 }
 
 .tarjeta img {
     width: 100%;
-    aspect-ratio: 1 / 1 ;
+    aspect-ratio: 1 / 1;
     border-radius: 10px;
 }
 
@@ -102,6 +112,10 @@ footer {
             'menu principal'
             'menu principal'
             'pie principal';
+    }
+
+    main {
+        padding: 15px;
     }
 
     .marca {
@@ -153,13 +167,13 @@ footer {
 
     footer {
         background-color: white;
-    }
-
-    .footer-img{
         display: flex;
         flex-direction: column;
+    }
+
+    .footer-img {
+        display: flex;
         width: 150px;
-        align-items: center;
     }
 
 }
