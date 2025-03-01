@@ -94,6 +94,41 @@ button:hover {
     color: white;
 }
 
+.paginas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: lightcyan;
+}
+
+.paginas a {
+    text-decoration: none;
+    color: blue;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    min-width: 40px;
+}
+
+.paginas a:hover {
+    background: lightblue;
+    color: white;
+}
+
+.paginas .activa {
+    font-weight: bold;
+    color: darkblue;
+    border-color: blue;
+}
+
+
 footer {
     grid-area: pie;
     background-color: lightblue;
@@ -162,6 +197,7 @@ footer {
     }
 
     .tarjeta {
+        text-align: center;
         width: 240px;
     }
 
