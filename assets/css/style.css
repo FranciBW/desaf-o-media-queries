@@ -136,8 +136,20 @@ footer {
     text-align: center;
 }
 
-.footer-img {
-    display: none;
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.redes-sociales i {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.redes-sociales a {
+    color: black;
 }
 
 @media (min-width:576px) {
@@ -207,9 +219,8 @@ footer {
         flex-direction: column;
     }
 
-    .footer-img {
-        display: flex;
-        width: 150px;
+    .redes-sociales {
+        background-color: white;
     }
 
 }
