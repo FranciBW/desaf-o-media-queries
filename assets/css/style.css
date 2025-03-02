@@ -12,6 +12,7 @@ body {
 
 .cabeza {
     grid-area: menu;
+    background-color: aqua;
 }
 
 .cabeza img {
@@ -38,6 +39,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: lightgrey;
+    padding: 10px;
 }
 
 .filtro select {
@@ -50,6 +53,7 @@ body {
 main {
     grid-area: principal;
     text-align: center;
+    background-color: lightblue;
 }
 
 .cards {
@@ -63,6 +67,7 @@ main {
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
+    background-color: white;
 }
 
 .tarjeta img {
@@ -94,18 +99,19 @@ button:hover {
     text-decoration: none;
     color: black;
     padding: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid gray;
     border-radius: 5px;
 }
 
 .paginas a:hover {
-    background: lightblue;
+    background: lightskyblue;
     color: white;
 }
 
 footer {
     grid-area: pie;
     text-align: center;
+    background-color: lightgray;
 }
 
 footer a {
