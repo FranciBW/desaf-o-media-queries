@@ -61,7 +61,7 @@ main {
     grid-template-columns: 1fr;
 }
 
-.tarjeta {
+.tarjeta2 {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -70,13 +70,13 @@ main {
     background-color: white;
 }
 
-.tarjeta img {
+.tarjeta2 img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-button {
+.tarjeta2 button {
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -85,9 +85,13 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.tarjeta2 button:hover {
     background-color: green;
     color: white;
+}
+
+.tarjeta {
+    display: none;
 }
 
 .paginas {
@@ -158,6 +162,34 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
+    }
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: white;
+    }
+    
+    .tarjeta img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .tarjeta button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        border-color: lightgoldenrodyellow;
+        background-color: lightgreen;
+        cursor: pointer;
+    }
+    
+    .tarjeta button:hover {
+        background-color: green;
+        color: white;
     }
 
 }
